@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "302911699581",
+    "project_id": "magmamerge123",
+    "storage_bucket": "magmamerge123.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302911699581:android:8b1a335352849fff358f14",
+        "android_client_info": {
+          "package_name": "com.ANS.MagmaMerge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJryeGsZMIx8rWSU9QGddvOC1lCzfD6B0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
