@@ -16,8 +16,8 @@ namespace PT.Tools.Windows
         
         Upgrades,
         
-      MenuShop,
-      MenuTutorial,
-      MenuPrivacyPolicy,
+        MenuShop,
+        MenuTutorial,
+        MenuPrivacyPolicy,
     }
 }

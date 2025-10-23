@@ -5,6 +5,7 @@ using Gameplay.Current.Configs;
 using Gameplay.Current.Shockwave2048.Elements;
 using Gameplay.Current.Shockwave2048.Enums;
 using Gameplay.General.Score;
+using Gameplay.IOS.Shop;
 using PT.Tools.EventListener;
 using UnityEngine;
 using Zenject;
@@ -24,6 +25,8 @@ namespace Gameplay.Current.Shockwave2048.Board
         [Inject] private ShockwaveProcessor _shockwaveProcessor;
         [Inject] private ElementProvider _elementProvider;
         [Inject] private ScoreManager _scoreManager;
+        [Inject] private ShopManager _shopManager;
+        [Inject] private ShopItemsConfig _shopItemsConfig;
         
         private Dictionary<Vector2Int, GridSlotData> _grid = new();
         private Stack<Dictionary<Vector2Int, GridSlotData>> _gridSteps = new();
@@ -170,6 +173,10 @@ namespace Gameplay.Current.Shockwave2048.Board
         {
             var element = boardView.GetElement();
             element.transform.localPosition = position;
+            
+            var index = _shopManager.GetEquippedId(ShopItemEnum.ShopMainItem);
+            element.SetShopSprite(_shopItemsConfig.ShopItemInfos[index].Sprite);
+            
             _grid[gridPosition].SetData(data, element);
         }
 

@@ -14,11 +14,15 @@ namespace Gameplay.Current.Shockwave2048.Elements
 
         public void Set(Sprite sprite, int level)
         {
-            image.sprite = sprite;
             levelText.text = level.ToString();
             
             mergeImage.enabled = false;
-        } 
+        }
+
+        public void SetSprite(Sprite sprite)
+        {
+            image.sprite = sprite;
+        }
         
         public void PlayMerge()
         {

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Gameplay.IOS.CurrencyRelated;
 using PT.Tools.EventListener;
 using UniRx;
 using UnityEngine;
@@ -12,6 +13,7 @@ namespace Gameplay.General.Score
         public ReactiveProperty<int> BestScoreReactive { get; private set; } = new();
 
         [Inject] private ScoreMultiplier _multiplier;
+        [Inject] private CurrencyManager _currencyManager;
 
         private Stack<int> _prevScores = new();
         private int _bestScore;
@@ -74,6 +76,8 @@ namespace Gameplay.General.Score
         public void MergePush(Vector2 position, int value, int step)
         {
             TotalScoreReactive.Value += value * step;
+            
+            _currencyManager.Add(CurrencyType.Gold, Mathf.RoundToInt(value * _multiplier.Current));
         }
 
         private void ResetScore()

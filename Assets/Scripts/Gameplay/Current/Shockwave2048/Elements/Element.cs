@@ -16,6 +16,11 @@ namespace Gameplay.Current.Shockwave2048.Elements
             view.PlayMerge();
         }
 
+        public void SetShopSprite(Sprite sprite)
+        {
+            view.SetSprite(sprite);
+        }
+
         public void StopMergeEffect()
         {
             view.StopPlayingMerge();

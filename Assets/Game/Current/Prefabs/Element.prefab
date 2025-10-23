@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 6577157646069021124}
   - component: {fileID: 8205247071018739478}
   - component: {fileID: 1141158082088948471}
-  - component: {fileID: 1604137184420132481}
+  - component: {fileID: 1995638319456682183}
   m_Layer: 0
   m_Name: Element
   m_TagString: Untagged
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   view:
-    image: {fileID: 1604137184420132481}
+    image: {fileID: 1995638319456682183}
     mergeImage: {fileID: 4964211713432286055}
     levelText: {fileID: 4716525692782666184}
 --- !u!222 &1141158082088948471
@@ -139,7 +139,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756758953380896561}
   m_CullTransparentMesh: 1
---- !u!114 &1604137184420132481
+--- !u!114 &1995638319456682183
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 95530b5769b442c4d8525239e53f712b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ff0bcea102c6fdf4aa51842c98b0570d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
