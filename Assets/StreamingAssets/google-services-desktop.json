@@ -1,26 +1,28 @@
 {
   "project_info": {
-    "project_number": "509476996534",
-    "project_id": "fruitdraw111",
-    "storage_bucket": "fruitdraw111.firebasestorage.app"
+    "project_number": "28416401651",
+    "project_id": "wavestmerge",
+    "storage_bucket": "wavestmerge.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:509476996534:android:b632395bff4c7ce50bad17",
+        "mobilesdk_app_id": "1:28416401651:ios:09c7229b3cb72138729786",
         "android_client_info": {
-          "package_name": "com.ANS.FruitDraw"
+          "package_name": "com.ans.wavemerge"
         }
       },
-      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC-jCcvhfUwuUF3D8TJrd8VWGeIFkeEXgA"
+          "current_key": "AIzaSyD-iHVc35G_3PPGtjOS-FjVv1HFHPzy40U"
         }
       ],
       "services": {
+        "analytics_service": {
+          "status": 0
+        },
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "status": 1
         }
       }
     }
